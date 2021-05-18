@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  perspective: 1000px;
+}
+
+.container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-header p {
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.right-header {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.right-header label {
+  width: 100%;
+}
+
+.right-header select {
+  width: 15%;
+  margin-left: 5px;
+}
+
+.right-header button {
+  width: 30%;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+.title {
+  display: flex;
+  justify-content: start;
+}
+
+.title > h4 {
+  margin: 0 0 0 10px;
+  align-self: center;
+}
+
+.title > img {
+  width: 15%;
+}
+
+.cards {
+  width: 100%;
+  height: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.small {
+  width: 180px;
+  height: 180px;
+  margin: 5px;
+}
+
+.card.medium {
+  width: 140px;
+  height: 140px;
+  margin: 5px;
+}
+
+.card.large {
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+}
+
+.avatar {
+  position: absolute;
+  width: 99%;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer button {
+  width: 10%;
+  height: 35px;
+  margin: 15px 45%;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+.modalContainer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.3);
+}
+
+.modalBox {
+  width: 100%;
+  height: 300px;
+  margin-top: 120px;
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+}
+
+.wrong {
+  animation-name: wrongAnimation;
+  animation-duration: 0.3s;
+  animation-iteration-count: 5;
+}
+
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid gold;
+  }
+}
